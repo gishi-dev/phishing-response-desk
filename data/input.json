@@ -1,0 +1,531 @@
+{
+  "company": "サンプル連絡商事",
+  "employees": [
+    {
+      "id": "E01",
+      "role": "総務担当"
+    },
+    {
+      "id": "E02",
+      "role": "受付担当の代理"
+    },
+    {
+      "id": "E03",
+      "role": "業務担当"
+    },
+    {
+      "id": "E04",
+      "role": "業務担当"
+    },
+    {
+      "id": "E05",
+      "role": "業務担当"
+    },
+    {
+      "id": "E06",
+      "role": "業務担当"
+    },
+    {
+      "id": "E07",
+      "role": "業務担当"
+    },
+    {
+      "id": "E08",
+      "role": "業務担当"
+    },
+    {
+      "id": "E09",
+      "role": "業務担当"
+    },
+    {
+      "id": "E10",
+      "role": "業務担当"
+    },
+    {
+      "id": "E11",
+      "role": "情報管理担当"
+    },
+    {
+      "id": "E12",
+      "role": "責任者"
+    },
+    {
+      "id": "E13",
+      "role": "業務担当"
+    },
+    {
+      "id": "E14",
+      "role": "業務担当"
+    },
+    {
+      "id": "E15",
+      "role": "業務担当"
+    },
+    {
+      "id": "E16",
+      "role": "業務担当"
+    },
+    {
+      "id": "E17",
+      "role": "業務担当"
+    },
+    {
+      "id": "E18",
+      "role": "業務担当"
+    },
+    {
+      "id": "E19",
+      "role": "業務担当"
+    },
+    {
+      "id": "E20",
+      "role": "業務担当"
+    }
+  ],
+  "reports": [
+    {
+      "id": "M01",
+      "receiver": "E01",
+      "summary": "仕入先Aの納期連絡",
+      "sender": "supplier@example.jp",
+      "receivedAt": "2026-11-10T09:01",
+      "note": "開かず報告、既存の連絡先で確認",
+      "operation": "なし",
+      "reported": true,
+      "materialTruth": "正当",
+      "revision": 0
+    },
+    {
+      "id": "M02",
+      "receiver": "E02",
+      "summary": "金融機関Bの定期案内",
+      "sender": "bank@example.jp",
+      "receivedAt": "2026-11-10T09:02",
+      "note": "開かず報告、既存の連絡先で確認",
+      "operation": "なし",
+      "reported": true,
+      "materialTruth": "正当",
+      "revision": 0
+    },
+    {
+      "id": "M03",
+      "receiver": "E03",
+      "summary": "漏えいのお詫びを名乗る依頼",
+      "sender": "notice@example.jp",
+      "receivedAt": "2026-11-10T09:03",
+      "note": "自分で不要と判断し、報告しない",
+      "operation": "なし",
+      "reported": false,
+      "materialTruth": "不審",
+      "revision": 0
+    },
+    {
+      "id": "M04",
+      "receiver": "E04",
+      "summary": "行政Cを名乗る確認依頼",
+      "sender": "office@example.jp",
+      "receivedAt": "2026-11-10T09:04",
+      "note": "報告後、担当がメール内リンクで確認",
+      "operation": "なし",
+      "reported": true,
+      "materialTruth": "不審",
+      "revision": 0
+    },
+    {
+      "id": "M05",
+      "receiver": "E05",
+      "summary": "補償手続きを名乗る案内",
+      "sender": "support@example.jp",
+      "receivedAt": "2026-11-10T09:05",
+      "note": "開かず報告、別経路で確認",
+      "operation": "なし",
+      "reported": true,
+      "materialTruth": "不審",
+      "revision": 0
+    },
+    {
+      "id": "M06",
+      "receiver": "E06",
+      "summary": "取引先Dを名乗る確認依頼",
+      "sender": "partner@example.jp",
+      "receivedAt": "2026-11-10T09:06",
+      "note": "リンクを開いてから報告。入力の申告はなし",
+      "operation": "開いた",
+      "reported": true,
+      "materialTruth": "不審",
+      "revision": 0
+    },
+    {
+      "id": "M07",
+      "receiver": "E07",
+      "summary": "行政Cの説明会案内",
+      "sender": "seminar@example.jp",
+      "receivedAt": "2026-11-10T09:07",
+      "note": "開かず報告、別経路で確認",
+      "operation": "なし",
+      "reported": true,
+      "materialTruth": "正当",
+      "revision": 0
+    },
+    {
+      "id": "M08",
+      "receiver": "E08",
+      "summary": "金融機関Bを名乗る再認証依頼",
+      "sender": "account@example.jp",
+      "receivedAt": "2026-11-10T09:08",
+      "note": "パスワードを入力した設定。変更済みとだけ報告",
+      "operation": "入力した",
+      "reported": true,
+      "materialTruth": "不審",
+      "revision": 0
+    },
+    {
+      "id": "M09",
+      "receiver": "E09",
+      "summary": "仕入先Aの請求書到着案内",
+      "sender": "billing@example.jp",
+      "receivedAt": "2026-11-10T09:09",
+      "note": "開かず報告、別経路で確認",
+      "operation": "なし",
+      "reported": true,
+      "materialTruth": "正当",
+      "revision": 0
+    },
+    {
+      "id": "M10",
+      "receiver": "E10",
+      "summary": "漏えいの対象確認を名乗る案内",
+      "sender": "check@example.jp",
+      "receivedAt": "2026-11-10T09:10",
+      "note": "開かず報告、別経路で確認",
+      "operation": "なし",
+      "reported": true,
+      "materialTruth": "不審",
+      "revision": 0
+    }
+  ],
+  "cases": {
+    "M01": {
+      "confirmations": [
+        {
+          "route": "既存の連絡先",
+          "target": "仕入先Aの業務窓口",
+          "time": "2026-11-10T10:00",
+          "findings": "納期連絡の控えと一致",
+          "unknown": "真偽と完了の人の判断は未記録",
+          "operator": "E11"
+        }
+      ],
+      "exposures": [],
+      "assignment": null,
+      "judgment": null
+    },
+    "M02": {
+      "confirmations": [
+        {
+          "route": "既存の連絡先",
+          "target": "金融機関Bの既存窓口",
+          "time": "2026-11-10T10:00",
+          "findings": "定期案内の控えと一致",
+          "unknown": "真偽と完了の人の判断は未記録",
+          "operator": "E11"
+        }
+      ],
+      "exposures": [],
+      "assignment": null,
+      "judgment": null
+    },
+    "M03": {
+      "confirmations": [],
+      "exposures": [],
+      "assignment": null,
+      "judgment": null
+    },
+    "M04": {
+      "confirmations": [
+        {
+          "route": "メール内のリンク",
+          "target": "行政Cを名乗る案内先",
+          "time": "2026-11-10T10:00",
+          "findings": "確認したという申告のみ",
+          "unknown": "真偽と完了の人の判断は未記録",
+          "operator": "E11"
+        }
+      ],
+      "exposures": [
+        {
+          "person": "E11",
+          "operation": "開いた",
+          "openedAt": null,
+          "operationReview": null,
+          "impactOwner": null,
+          "contact": null,
+          "change": null,
+          "login": null
+        }
+      ],
+      "assignment": null,
+      "judgment": null
+    },
+    "M05": {
+      "confirmations": [
+        {
+          "route": "既存の連絡先",
+          "target": "補償案内の名乗り先の既存窓口",
+          "time": "2026-11-10T10:00",
+          "findings": "該当する案内を出していないとの控え",
+          "unknown": "真偽と完了の人の判断は未記録",
+          "operator": "E11"
+        }
+      ],
+      "exposures": [],
+      "assignment": null,
+      "judgment": null
+    },
+    "M06": {
+      "confirmations": [
+        {
+          "route": "既存の連絡先",
+          "target": "取引先Dの業務窓口",
+          "time": "2026-11-10T10:00",
+          "findings": "確認依頼を出していないとの控え",
+          "unknown": "真偽と完了の人の判断は未記録",
+          "operator": "E11"
+        }
+      ],
+      "exposures": [
+        {
+          "person": "E06",
+          "operation": "開いた",
+          "openedAt": null,
+          "operationReview": null,
+          "impactOwner": null,
+          "contact": null,
+          "change": null,
+          "login": null
+        }
+      ],
+      "assignment": null,
+      "judgment": null
+    },
+    "M07": {
+      "confirmations": [
+        {
+          "route": "普段のブックマーク",
+          "target": "行政Cの説明会窓口",
+          "time": "2026-11-10T10:00",
+          "findings": "説明会の控えと一致",
+          "unknown": "真偽と完了の人の判断は未記録",
+          "operator": "E11"
+        }
+      ],
+      "exposures": [],
+      "assignment": null,
+      "judgment": null
+    },
+    "M08": {
+      "confirmations": [
+        {
+          "route": "普段のブックマーク",
+          "target": "金融機関Bの既存窓口",
+          "time": "2026-11-10T10:00",
+          "findings": "再認証の案内を出していないとの控え",
+          "unknown": "真偽と完了の人の判断は未記録",
+          "operator": "E11"
+        }
+      ],
+      "exposures": [
+        {
+          "person": "E08",
+          "operation": "入力した",
+          "openedAt": null,
+          "operationReview": null,
+          "impactOwner": null,
+          "contact": null,
+          "change": null,
+          "login": null
+        }
+      ],
+      "assignment": null,
+      "judgment": null
+    },
+    "M09": {
+      "confirmations": [
+        {
+          "route": "既存の連絡先",
+          "target": "仕入先Aの経理窓口",
+          "time": "2026-11-10T10:00",
+          "findings": "請求書到着案内の控えと一致",
+          "unknown": "真偽と完了の人の判断は未記録",
+          "operator": "E11"
+        }
+      ],
+      "exposures": [],
+      "assignment": null,
+      "judgment": null
+    },
+    "M10": {
+      "confirmations": [
+        {
+          "route": "既存の連絡先",
+          "target": "対象確認の名乗り先の既存窓口",
+          "time": "2026-11-10T10:00",
+          "findings": "対象確認の案内を出していないとの控え",
+          "unknown": "真偽と完了の人の判断は未記録",
+          "operator": "E11"
+        }
+      ],
+      "exposures": [],
+      "assignment": null,
+      "judgment": null
+    }
+  },
+  "replies": {
+    "E01": {
+      "ack": true,
+      "similar": true,
+      "operation": "なし",
+      "mailId": "M01",
+      "recorder": "E01",
+      "time": "2026-11-10T11:00"
+    },
+    "E02": {
+      "ack": true,
+      "similar": true,
+      "operation": "なし",
+      "mailId": "M02",
+      "recorder": "E01",
+      "time": "2026-11-10T11:00"
+    },
+    "E03": {
+      "ack": true,
+      "similar": true,
+      "operation": "なし",
+      "mailId": "M03",
+      "recorder": "E01",
+      "time": "2026-11-10T11:00"
+    },
+    "E04": {
+      "ack": true,
+      "similar": true,
+      "operation": "なし",
+      "mailId": "M04",
+      "recorder": "E01",
+      "time": "2026-11-10T11:00"
+    },
+    "E05": {
+      "ack": true,
+      "similar": true,
+      "operation": "なし",
+      "mailId": "M05",
+      "recorder": "E01",
+      "time": "2026-11-10T11:00"
+    },
+    "E06": {
+      "ack": true,
+      "similar": true,
+      "operation": "開いた",
+      "mailId": "M06",
+      "recorder": "E01",
+      "time": "2026-11-10T11:00"
+    },
+    "E07": {
+      "ack": true,
+      "similar": true,
+      "operation": "なし",
+      "mailId": "M07",
+      "recorder": "E01",
+      "time": "2026-11-10T11:00"
+    },
+    "E08": {
+      "ack": true,
+      "similar": true,
+      "operation": "入力した",
+      "mailId": "M08",
+      "recorder": "E01",
+      "time": "2026-11-10T11:00"
+    },
+    "E09": {
+      "ack": true,
+      "similar": true,
+      "operation": "なし",
+      "mailId": "M09",
+      "recorder": "E01",
+      "time": "2026-11-10T11:00"
+    },
+    "E10": {
+      "ack": true,
+      "similar": true,
+      "operation": "なし",
+      "mailId": "M10",
+      "recorder": "E01",
+      "time": "2026-11-10T11:00"
+    },
+    "E11": {
+      "ack": true,
+      "similar": false,
+      "operation": "開いた",
+      "mailId": "M04",
+      "recorder": "E01",
+      "time": "2026-11-10T11:00"
+    },
+    "E12": {
+      "ack": true,
+      "similar": false,
+      "operation": "なし",
+      "mailId": null,
+      "recorder": "E01",
+      "time": "2026-11-10T11:00"
+    },
+    "E13": {
+      "ack": true,
+      "similar": false,
+      "operation": "なし",
+      "mailId": null,
+      "recorder": "E01",
+      "time": "2026-11-10T11:00"
+    },
+    "E14": {
+      "ack": true,
+      "similar": false,
+      "operation": "なし",
+      "mailId": null,
+      "recorder": "E01",
+      "time": "2026-11-10T11:00"
+    },
+    "E15": {
+      "ack": true,
+      "similar": false,
+      "operation": "なし",
+      "mailId": null,
+      "recorder": "E01",
+      "time": "2026-11-10T11:00"
+    },
+    "E16": {
+      "ack": true,
+      "similar": false,
+      "operation": "なし",
+      "mailId": null,
+      "recorder": "E01",
+      "time": "2026-11-10T11:00"
+    },
+    "E17": {
+      "ack": true,
+      "similar": false,
+      "operation": "なし",
+      "mailId": null,
+      "recorder": "E01",
+      "time": "2026-11-10T11:00"
+    },
+    "E18": {
+      "ack": true,
+      "similar": false,
+      "operation": "なし",
+      "mailId": null,
+      "recorder": "E01",
+      "time": "2026-11-10T11:00"
+    },
+    "E19": null,
+    "E20": null
+  }
+}

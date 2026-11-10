@@ -1,0 +1,16 @@
+{
+  "name": "phishing-response-desk",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "架空の不審メール報告後の対応を人が判断して記録する公開デモ",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "node server.mjs",
+    "check": "node --check server.mjs && node --check app.js && node --check model.js"
+  },
+  "dependencies": {}
+}
